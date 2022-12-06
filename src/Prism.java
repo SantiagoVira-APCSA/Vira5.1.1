@@ -1,2 +1,33 @@
-package PACKAGE_NAME;public class Prism {
+public class Prism {
+    private int length, width, height;
+
+    public Prism(int l, int w, int h) {
+        length = l;
+        width = w;
+        height = h;
+    }
+
+    public String toString() {
+        return "Length: %d\nWidth: %d\nHeight: %d".formatted(length, width, height);
+    }
+
+    public void setLength(int length) {
+        this.length = length;
+    }
+
+    public void setWidth(int width) {
+        this.width = width;
+    }
+
+    public void setHeight(int height) {
+        this.height = height;
+    }
+
+    public int volume() {
+        return length * width * height;
+    }
+
+    public int surfaceArea() {
+        return 2 * (length * width + length * height + width * height);
+    }
 }

@@ -1,4 +1,4 @@
-public class Main {
+public class DiceRunner {
     public static void main(String[] args) {
         Dice d6 = new Dice(6);
         d6.roll();
