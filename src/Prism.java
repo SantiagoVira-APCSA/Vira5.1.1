@@ -7,6 +7,18 @@ public class Prism {
         height = h;
     }
 
+    public Prism(int len) {
+        length = len;
+        width = len;
+        height = len;
+    }
+
+    public Prism() {
+        length = 10 + (int) (Math.random() * 91);
+        width = 10 + (int) (Math.random() * 91);
+        height = 10 + (int) (Math.random() * 91);
+    }
+
     public String toString() {
         return "Length: %d\nWidth: %d\nHeight: %d".formatted(length, width, height);
     }
